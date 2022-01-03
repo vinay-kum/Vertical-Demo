@@ -43,7 +43,7 @@ function HeaderMenu({logoUrl, categories}) {
             // onClick={() => router.push(`/products`)}
           >
             {categories && categories.length > 0 && categories.map((category, i) => (
-              <NavDropdown.Item key={i} onClick={() => router.push(`/categories/${encodeURIComponent(category.id)}`)}>{category.name}</NavDropdown.Item>
+              <NavDropdown.Item key={i} onClick={() => router.push(`/categories/${encodeURIComponent(category.id)}`)}>-{category.name}</NavDropdown.Item>
             ))}
           </NavDropdown>
           <Nav.Link href="#">About</Nav.Link>
