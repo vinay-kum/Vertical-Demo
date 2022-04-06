@@ -23,11 +23,11 @@ function HeaderMenu({logoUrl, categories}) {
 
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand onClick={() => router.push(`/`)} className='primaryBackground' style={{padding: '8px 16px', cursor: 'pointer'}}>
+      <Navbar.Brand onClick={() => router.push(`/`)}  style={{padding: '8px 16px', cursor: 'pointer'}}>
         <img
           src={logoUrl}
           width='auto'
-          height="30"
+          height="60"
           // className="d-inline-block align-top"
           alt="React Bootstrap logo"
         />
